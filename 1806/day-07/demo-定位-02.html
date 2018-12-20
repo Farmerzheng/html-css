@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .father {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        position: relative;
+    }
+    
+    .father .child {
+        width: 100px;
+        height: 100px;
+        position: absolute
+    }
+    
+    .father .child1 {
+        top: 10px;
+        left: 10px;
+        background-color: red;
+    }
+    
+    .father .child2 {
+        top: 20px;
+        left: 20px;
+        background-color: pink
+    }
+</style>
+
+<body>
+    <div class="father">
+        <div class="child child1"></div>
+        <div class="child child2"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+      浮动可以让两个块状盒子在一行显示
+
+      浮动的元素不能撑起父盒子的高度
+
+      如何才能让浮动的盒子撑起父元素的高度
+     */
+    
+    .container {
+        background-color: yellow
+    }
+    
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red
+    }
+    
+    .left {
+        float: left;
+    }
+    
+    .right {
+        float: right;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    .clear:after {
+        content: '';
+        display: block;
+        clear: both
+    }
+    
+    .clear {
+        zoom: 1
+        /* 兼容IE6 */
+    }
+</style>
+
+<body>
+    <div class="container clear">
+        <div class="box left">left</div>
+        <div class="box right">right</div>
+        <!-- <div></div> -->
+    </div>
+    <div>
+        融机构监管、疫苗管理、国家发展规划、促进小农户与现代农业发展衔接等出台了一系列改革新措施，就是结合实践中的难题，以改革的思路和方法加以破解的重要佐证。地分析了当前改革的大好形势，就如何抓改革、抓落实提出了明确的要求，为深入推进改革注入了强大的动力。我们要深刻领会习近平总书记的重要讲话精神，以问题为导向，主动担当，敢于作为，狠抓落实，将全面深化改革稳步推进。 习近平总书记指出，改革重在落实，也难在落实。正确的战略需要正确的战术来落实和执行，落实才能出成绩，执行才能见成效。从十八届三中全会铺开全面深化改革的大棋局开始，许多关键环节、重要方面的改革部署先后“落子”，全面深化改革各项工作有条不紊、扎实推进。我们要抓住大好机遇，进一步加强党对改革工作的领导，做到真抓实干，善作善成，将各项改革落实到位、改出成效。此次会议就推动高质量发展、区域协调发展、自贸区深化改革创新、金融机构监管、疫苗管理、国家发展规划、促进小农户与现代农业发展衔接等出台了一系列改革新措施，就是结合实践中的难题，以改革的思路和方法加以破解的重要佐证。地分析了当前改革的大好形势，就如何抓改革、抓落实提出了明确的要求，为深入推进改革注入了强大的动力。我们要深刻领会习近平总书记的重要讲话精神，以问题为导向，主动担当，敢于作为，狠抓落实，将全面深化改革稳步推进。
+        习近平总书记指出，改革重在落实，也难在落实。正确的战略需要正确的战术来落实和执行，落实才能出成绩，执行才能见成效。从十八届三中全会铺开全面深
+    </div>
+
+</body>
+
+</html>

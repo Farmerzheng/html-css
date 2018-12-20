@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* div {
+        color: red
+    } */
+    /* .box {
+        color: red
+    } */
+    /* div.box {
+        color: yellow
+    } */
+    /* div#box {
+        color: blue
+    } */
+    /* .box,
+    span {
+        color: red
+    } */
+    /* .box span {
+        color: red
+    } */
+    /* .box>span {
+        border: 1px solid red;
+    }
+    
+    .box+div {
+        background-color: aqua
+    } */
+    
+    .box~div {
+        background-color: aqua
+    }
+    
+    input[type='text'] {
+        background-color: yellow
+    }
+    /* col-sm-1,col-sm-2, */
+    /* div[class^='col-sm-'] {
+        color: red
+    } */
+    
+    div[class*='a'] {
+        color: red
+    }
+</style>
+
+<body>
+    <!-- 
+      CSS 选择器
+
+      类选择器(.box)、
+      id选择器(#box)、
+      标签选择器(div)、
+      通用选择器（*）、
+      交叉选择器（div.box）、
+      群组选择器(.box1,.box2)、
+      后代选择器(.nav .nav-menu)、
+      父子选择器(div>san)、
+      为类选择器(.nav-link:hover)、
+      相邻选择器(div+span)、
+      兄弟选择器(div~span)、
+      属性选择器(input[type='text'])      
+
+     -->
+    <div class="box" id='box'>
+        <!-- <span>
+            span1
+            <span>span2</span>
+        </span> -->
+    </div>
+    <div>div1</div>
+    <div>div2</div>
+
+    <!-- <input type="text" name="" id="">
+    <input type="password" name="" id=""> -->
+
+    <div class="col-sm-1-a">1</div>
+    <div class="col-sm-2">2</div>
+    <div class="col-sm-3">3</div>
+    <div class="col-sm-4">4</div>
+    <div class="col-sm-5">5</div>
+
+
+
+</body>
+
+</html>

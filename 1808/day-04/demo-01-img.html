@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!-- 
+    div span 是没有语义的
+    div span 充当盒子用的
+    div 块状的  span 行内
+     
+    选择器的作用？选择标签用的
+    选择器的分类？标签选择器、类选择器、id选择器
+
+    一般用 类选择器控制样式
+
+    为什么用类选择器控制样式？类选择器可以复用
+
+    代码？代码的复用性，扩展性，继承性，可维护性
+
+    类的命名？
+    1、不能用 汉字、拼音、大写英文字母
+    2、可以用英文、数字
+    3、英文有语义
+    4、多个单词之间用 - 连接
+    5、英文单词过长，需要简写，增加浏览器解析速度，减少代码量
+        例如： navigation  ----nav 
+        
+    6、一个标签可以拥有多个类
+    
+ -->
+<style>
+    /* 
+    需要给 ul\li\a\img 写样式
+
+    书写样式的顺序：由大到小，从外到内
+
+    margin: 盒子的外边距，控制着盒子的位置
+*/
+    
+    ul {
+        list-style: none;
+        /* 
+          html 中所有的标签都是盒子
+          margin 盒子的外边距
+          padding 盒子的内边距（内填充）
+        
+         */
+        margin: 0;
+        padding: 0
+    }
+    
+    body {
+        margin: 0
+    }
+    
+    .list-product {
+        width: 1200px;
+        /* height: 300px; */
+        margin: 0 auto;
+        /* background-color: red; */
+        font-size: 0
+        /* list-style: none */
+    }
+    /* 后代选择器 */
+    
+    .list-product .list-product-item {
+        width: 390px;
+        display: inline-block;
+        background-color: yellow;
+    }
+    
+    .list-product .list-product-margin {
+        margin-right: 15px;
+    }
+    /* 后代选择器的层级不要过多，最好不要超过三级 */
+    
+    .list-product .list-product-link {
+        display: block;
+        width: 100%;
+    }
+    
+    .list-product .list-img {
+        width: 100%;
+    }
+</style>
+
+<body>
+
+    <!--
+     ul : 无序列表 （unorder list） li : 列表项 (list item) ul 与 li 组成了无序列表 li 嵌套在 ul 中（两个标签必须配合使用）
+    快捷键：
+    ul.list-product>li.list-product-item*3>a.list-product-link>img.product-img  -->
+
+    <ul class="list-product">
+        <li class="list-product-item list-product-margin">
+            <a href="http://www.baidu.com" class="list-product-link" title='小米8'>
+                <img src="images/MI-8.jpg" alt="小米8" class="list-img">
+            </a>
+        </li>
+        <li class="list-product-item list-product-margin">
+            <a href="" class="list-product-link" title='红米6'>
+                <img src="images/MI-red-6.jpg" alt="红米6" class="list-img">
+            </a>
+        </li>
+        <li class="list-product-item">
+            <a href="" class="list-product-link" title='小米空气净化器'>
+                <img src="images/cleaner.jpg" alt="小米空气净化器" class="list-img">
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>

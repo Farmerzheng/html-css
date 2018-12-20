@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+      浮动可以让行内元素支持宽高
+
+      浮动的元素支持上下的padding和margin
+
+      浮动的元素没有间距（行内块元素有间距）
+
+      
+      
+     */
+    
+    .box {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        background-color: yellow
+    }
+    
+    .bar {
+        height: 50px;
+        background-color: red;
+    }
+</style>
+
+<body>
+    <span class="box">span</span>
+    <span class="box">span</span>
+    <span class="box">span</span>
+    <span class="box">span</span>
+    <span class="box">span</span>
+    <div class="bar"></div>
+</body>
+
+</html>

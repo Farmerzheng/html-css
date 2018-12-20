@@ -1,0 +1,152 @@
+/*
+* CSS Reset v1.0
+* 
+* Copyright 2013
+* licensed under the MIT licenses.
+*
+* Designed and built by wangzheng 
+* 
+*/
+
+
+/* 
+  在IE8、IE9中没有定义HTML5中新标签的默认display样式
+*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+
+/*
+  浏览器之间的差异主要是由padding、margin、border这3个样式有关的默认样式产生的
+
+但是没必要重置所有元素的padding、margin、border值，因为会影响页面渲染的性能
+*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+
+/*
+  img 标签在一个 a 标签内部时，在IE8、IE9中会出现默认的border
+*/
+
+img {
+    border: 0
+}
+
+
+/*
+  字体设置
+  h1~h6、strong、em等语义化的标签都有默认的字体样式
+  在实际的项目中一般都会重新定义样式
+*/
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    /*to enable resizing for IE*/
+    *font-size: 100%
+}
+
+
+/*
+  	其他元素样式重置
+*/
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:link,
+a:visited {
+    text-decoration: none
+}
+
+body {
+    background-color: #f0f3ef;
+    font: 12px/1.5 Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \\5b8b\4f53, sans-serif
+}
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right
+}

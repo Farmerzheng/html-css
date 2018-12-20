@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .site-nav-bd {
+        /* 文字样式（颜色、字体大小、字体类型）可以被 继承 */
+        color: red
+    }
+    
+    .site-nav-bd .site-nav-bd-l {
+        font-size: 100px
+    }
+    
+    .site-nav-bd .site-nav-bd-r {
+        font-size: 200px
+    }
+    
+    .site-nav-bd .site-nav-menu-china {
+        background-color: green
+    }
+</style>
+
+<body>
+    <div class='site-nav-bd'>
+        <ul class='site-nav-bd-l'>
+            <li class='site-nav-menu site-nav-menu-china'>中国大陆</li>
+            <li class='site-nav-menu'>手机淘宝</li>
+            <li class='site-nav-menu'>消息</li>
+        </ul>
+        <ul class='site-nav-bd-r'>
+            <li class='site-nav-menu'>收藏夹</li>
+            <li class='site-nav-menu'>商品分类</li>
+            <li class='site-nav-menu'>卖家中心</li>
+        </ul>
+    </div>
+</body>
+
+</html>

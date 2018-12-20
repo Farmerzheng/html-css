@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!-- 
+
+    web 标准： html(结构) css（样式） javascript（行为）----》分离
+
+ -->
+<style>
+    /*
+     样式 CSS 
+
+     style 标签当中可以写样式    
+   
+     CSS 语法 
+
+     a : 选择器（标签选择器）
+
+     #link ：选择器（id 选择器)#后加上id属性值
+
+     .bg ：类选择器 .后面跟类名
+
+     选择器的作用？定位到要操作的标签
+
+     {}  ： 里面书写具体样式
+
+     具体样式如何书写？ 样式名 ： 样式值
+
+     样式之间用分号隔开
+
+     style 属性 ,属性值是样式对
+
+     样式可以直接写在style属性中    
+
+     样式（CSS）可以写在哪里？ style 标签中、style 属性里    
+     
+     */
+    
+    a {
+        color: red;
+        font-size: 30px;
+    }
+    
+    #link {
+        /* 
+            border: 边框  
+            solid ：实线 
+            样式名有多个样式值的时候，用空格隔开
+        */
+        border: 2px solid red;
+    }
+    
+    .bg {
+        background-color: yellow
+    }
+</style>
+
+<body>
+
+    <a href="http://www.baidu.com" id='link'>百度</a>
+    <a href="http://www.163.com" class="bg">网易</a>
+    <br>
+    <a href="" class="bg">超链接</a>
+    <a href="" style='text-decoration: none;font-size: 100px'>超链接</a>
+</body>
+
+</html>

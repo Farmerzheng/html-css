@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+      vertical-align : baseline、top、middle、bottom
+
+      vertical-align 作用？
+
+      控制着没有脱离文档流的行内元素、行内块元素（img\input\textarea\inline-block）的垂直对齐方式
+
+      注意： vertical-align 对浮动元素不起作用
+     */
+    
+    div>span {
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div>
+        <span>span</span>
+        <img src="images/apple.jpg" alt="">
+    </div>
+</body>
+
+</html>

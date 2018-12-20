@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .delicious {
+        color: red
+    }
+    
+    p.delicious {
+        font-size: 30px;
+    }
+    
+    .grandfather {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    
+    .grandfather>div {
+        /* '>' 代表直接子元素，也就是儿子，不包括孙子 */
+        width: 50px;
+        height: 50px;
+        background-color: yellow
+    }
+    
+    .jack {
+        width: 20px;
+        height: 20px;
+        background-color: aqua
+    }
+</style>
+
+<body>
+    <div>
+        <p>这是一条鲅鱼</p>
+        <p class="delicious">这是一条鲅鱼</p>
+    </div>
+    <div class="grandfather">
+        <div>
+            <div class="jack"></div>
+        </div>
+    </div>
+</body>
+
+</html>

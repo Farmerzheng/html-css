@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+<style>
+    table {
+        /* border: */
+        /* border-collapse: collapse */
+    }
+</style>
+
+<body>
+    <!-- 
+    table 表格
+
+    tr 行
+
+    td 数据单元格
+
+    th 表头单元格
+
+-->
+    <!-- 
+
+    cellspacing : cell 细胞 space 间隔
+    cellpadding : cell 细胞 padding  填充 
+
+ -->
+    <table border="1" cellspacing='10' cellpadding='20px' align='center'>
+        <caption>我是表格标题</caption>
+        <thead>
+            <tr>
+                <td colspan='4'> 学生信息</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <!-- col 列  span 跨 -->
+                <th colspan="2">电话</th>
+            </tr>
+            <tr>
+                <td>小王</td>
+                <td>女</td>
+                <td>110</td>
+                <!-- row 行 span 跨度 -->
+                <td rowspan="3">海淀区</td>
+            </tr>
+            <tr>
+                <td>小李</td>
+                <td>男</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>小张</td>
+                <td>男</td>
+                <td>119</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan='4'> 备注</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>

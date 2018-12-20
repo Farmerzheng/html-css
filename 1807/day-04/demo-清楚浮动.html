@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+<style>
+    /* 
+       子元素能够撑起父元素
+       
+       浮动的元素脱离文档流，撑不起父元素的高度
+
+       如何才能让浮动的元素撑起父元素的高度？
+
+       给父元素添加 clear 类
+
+       .clear:after{
+           content:'';
+           display:block;
+           clear:both
+        }
+        .clear{
+            zoom:1
+        }        
+
+     */
+    
+    .father {
+        background-color: yellow
+    }
+    
+    .child {
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    /* .child2 { */
+    /* 
+          child2 左侧不能有浮动的元素 
+          只要有浮动的元素我就换行
+          clear:right:
+          clear:both
+
+
+        */
+    /* clear: left; */
+    /* } */
+    /* .child3 { */
+    /* clear: both */
+    /* } */
+    
+    .clear:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .clear {
+        /* IE6 */
+        zoom: 1
+    }
+    
+    .dabo {
+        height: 100px;
+        background-color: pink
+    }
+</style>
+
+<body>
+    <div class="father clear">
+        <div class="child"></div>
+        <div class="child"></div>
+        <!-- <div class="child3"></div> -->
+    </div>
+    <div class="dabo"></div>
+
+</body>
+
+</html>

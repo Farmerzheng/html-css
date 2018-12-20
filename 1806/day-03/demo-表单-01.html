@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+       表单域里面是：表单控件和提示文本
+
+       表单控件：input
+
+       表单域用 form 标签来表示 
+
+     -->
+    <!-- 
+       type 属性决定了 input控件的功能
+
+       radio 与 checkbox  都是type属性的值
+
+       radio 是单选框（只能有一个呗选中）
+
+       radio 控件一定要有name属性值，且name属性值必须相同
+
+       checkbox 是复选框（可以选中多个）
+
+     -->
+
+    <!-- 
+         ?name=王争&password=123&sex=man&hobby=drink
+
+         ? : 查询
+         ? 后面所有的值都是 参数
+         
+         name、password、sex、hobby 都是参数名
+
+         王争、123、man、drink 都是参数值
+
+         参数名与参数值之间用 =  链接
+
+         参数与参数之间用 &
+
+         表单控件当中的 name 属性 对应着 参数名
+         表单控件当中的 value 属性 对应着 参数值
+         
+         （input输入框的输入值就是它的value属性值）
+
+         计算机之间的通信方式：
+
+         1、客户端与服务器方式
+         2、对等链接的方式
+
+         客户端与服务器之间的数据交互方法？
+         1、GET 方式
+         2、POST 方式
+
+         form 标签 当中的 method 属性 定义了客户端与服务器交互的方式
+
+         method 属性的默认值是GET
+
+         action 属性值是提交的网址
+
+         GET 方法提交的参数拼接在了网址的后面，不安全，少量数据
+
+         POST 方法提交的参数放在了 FormData 当中，安全，大数据
+
+
+
+      -->
+    <form action="demo-列表.html" method="POST">
+        <div>
+            <!-- 表单当中的提示文本一般用label标签 -->
+            <label for="name">姓名</label>
+            <!-- placeholder 占位符 -->
+            <input name='name' type="text" id='name' placeholder="请输入姓名">
+        </div>
+        <div>
+            <label for="password">密码</label>
+            <input name='password' type="password" id='password' placeholder="请输入密码">
+        </div>
+        <div>
+            <label for="">性别</label> 男 <input type="radio" name='sex' value='man'> 女 <input type="radio" name='sex' value='woman'>
+        </div>
+        <div>
+            <span>爱好</span>
+            <span>
+                <input type="checkbox" name='hobby' value='game'>
+                <span>玩游戏</span>
+            </span>
+            <span>
+                <input type="checkbox" name='hobby' value='drink'>
+                <span>喝酒</span>
+            </span>
+            <span>
+                <input type="checkbox" name='hobby' value='smoking'>
+                <span>抽烟</span>
+            </span>
+        </div>
+
+        <input type="button" value='普通按钮'>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+    </form>
+
+
+
+</body>
+
+</html>

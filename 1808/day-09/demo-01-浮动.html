@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+<style>
+    .l {
+        float: left;
+    }
+    
+    .father {
+        height: 100px
+    }
+    
+    .box {
+        width: 100px;
+        height: 100px;
+        /* display: inline-block; */
+    }
+    
+    .red {
+        background-color: red
+    }
+    
+    .yellow {
+        background-color: yellow
+    }
+    
+    .box2 {
+        width: 100%;
+        height: 200px;
+        background-color: bisque
+    }
+</style>
+
+<body>
+    <!-- 
+       需求：
+       1、 让 两个盒子在一行显示
+
+           1.1  让两个盒子变成行内块
+           1.2  让两个盒子浮动起来
+
+       
+       html文档流：
+
+       html文档的正常排序,文档排序应该是自上而下，自左至右（遇到父元素边界折行）    
+
+       bug : 软件程序中的漏洞，软件程序开发完成后肯定会有bug,程序员要不断地干掉bug
+
+        浮动总结 ： 
+
+        1、浮动可以让两个盒子在一行显示
+        2、浮动可以使元素脱离文档流
+        3、浮动可以使行内元素支持宽高  
+        4、浮动元素不存在外边距折叠
+        5、浮动使行内元素支持上下 padding 和 margin
+        6、浮动的元素不存在间隙
+        7、浮动的元素拥有完美的盒模型
+
+        浮动：
+        1、脱离文档流
+        2、完美盒模型
+
+       
+     -->
+    <div class="father">
+        <span class="box red l"></span>
+        <span class="box yellow l"></span>
+    </div>
+
+
+    <div class="box2"></div>
+</body>
+
+</html>

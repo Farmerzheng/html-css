@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0
+    }
+    
+    a {
+        text-decoration: none
+    }
+    
+    ul,
+    li {
+        list-style: none;
+    }
+    
+    .clearfix:after {
+        content: '';
+        display: block;
+        clear: both
+    }
+    
+    .clearfix {
+        zoom: 1
+    }
+    
+    .nav {
+        height: 60px;
+        /* line-height: 60px; */
+        background-color: aquamarine;
+        background-image: url(./images/bg.jpg)
+    }
+    
+    .nav .nav-wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .nav .nav-item {
+        float: left;
+        padding: 0 9px;
+        margin-top: 12px;
+    }
+    
+    .nav .nav-link {
+        background-image: url(./images/1.png);
+        display: inline-block;
+        padding-left: 20px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        height: 33px;
+        line-height: 33px;
+    }
+    
+    .nav .nav-link span {
+        color: #fff;
+        background-image: url(./images/1.png);
+        display: inline-block;
+        padding-right: 20px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        height: 33px;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <ul class="nav-wrapper clearfix">
+            <li class="nav-item">
+                <a href="" class="nav-link clearfix">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link clearfix">
+                    <span>帮助与反馈</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link clearfix">
+                    <span>公众平台</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link clearfix">
+                    <span>开放平台</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link clearfix">
+                    <span>微信支付</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

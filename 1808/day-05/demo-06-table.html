@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        /* 
+        border : 边框
+        collapse: 崩塌，瓦解
+         */
+        /* border-collapse: collapse */
+    }
+</style>
+
+<body>
+    <!-- 
+
+        tr : table row
+        td : table data cell
+        th : table head cell
+     -->
+    <table border='1px' cellpadding='10px' cellspacing='20px'>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <!-- 
+                column : 列
+                span :   跨
+             -->
+            <th colspan="2">电话</th>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>男</td>
+            <td>110</td>
+            <!-- 
+                row : 行
+                span : 跨
+             -->
+            <td rowspan="2">海淀区</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>女</td>
+            <td>120</td>
+        </tr>
+    </table>
+</body>
+
+</html>

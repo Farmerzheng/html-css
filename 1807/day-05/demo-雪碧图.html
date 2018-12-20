@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0
+    }
+    
+    ul,
+    li {
+        list-style: none;
+    }
+    
+    .clearfix:after {
+        content: '';
+        display: block;
+        clear: both
+    }
+    
+    .clearfix {
+        zoom: 1
+    }
+    
+    .list {
+        width: 200px;
+        margin: 10px auto;
+        text-align: center;
+        /* height: 100px; */
+        /* background-color: red; */
+        border-top: 1px solid #aaa;
+        /* border-bottom: 1px solid #aaa */
+    }
+    
+    .list .list-item {
+        float: left;
+        width: 50px;
+        background-color: yellow
+    }
+    
+    .list .list-item .img-wrap {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: aqua;
+        background-image: url(images/sprite.png);
+        background-repeat: no-repeat
+    }
+    
+    .list .list-item-bd {
+        position: relative
+    }
+    
+    .list .list-item-bd:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 62px;
+        width: 50px;
+        height: 1px;
+        background-color: #aaa;
+    }
+    
+    .list .list-item-bd:before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 62px;
+        background-color: #aaa;
+        left: 49px;
+        top: 0px;
+    }
+    
+    .list .list-item-bd-r {
+        position: relative
+    }
+    
+    .list .list-item-bd-r:after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 1px;
+        background-color: #aaa;
+        left: 0;
+        top: 62px;
+    }
+    
+    .list .list-item .img-wrap-1 {
+        background-position: 3px 4px
+    }
+    
+    .list .list-item .img-wrap-2 {
+        background-position: 3px -39px
+    }
+    
+    .list .list-item .img-wrap-3 {
+        background-position: 3px -82px
+    }
+    
+    .list .list-item .img-wrap-4 {
+        background-position: 3px -127px
+    }
+    
+    .list .list-item .img-wrap-5 {
+        background-position: 3px -170px
+    }
+    
+    .list .list-item .img-wrap-6 {
+        background-position: 3px -215px
+    }
+    
+    .list .list-item .img-wrap-7 {
+        background-position: 3px -259px
+    }
+    
+    .list .list-item .img-wrap-8 {
+        background-position: 3px -303px
+    }
+    
+    .list .list-item .img-wrap-9 {
+        background-position: 3px -347px
+    }
+    
+    .list .list-item .img-wrap-10 {
+        background-position: 3px -393px
+    }
+    
+    .list .list-item .img-wrap-11 {
+        background-position: 3px -437px
+    }
+    
+    .list .list-item .img-wrap-12 {
+        background-position: 3px -481px
+    }
+    
+    .list .list-item .des {
+        font-size: 10px;
+        padding: 5px 0;
+    }
+    /* .bd-01{
+        position:relative
+    }
+    .bd-02{
+        position: absolute
+    }
+    .bd-03{
+        left:10px;
+        right:10px;
+    } */
+</style>
+
+<body>
+
+    <div>
+        <ul class="list clearfix">
+            <li class="list-item list-item-bd">
+                <div class="img-wrap img-wrap-1">
+                </div>
+                <p class="des">充话费</p>
+            </li>
+            <li class="list-item list-item-bd">
+                <div class="img-wrap img-wrap-2"></div>
+                <p class="des">旅行</p>
+            </li>
+            <li class="list-item list-item-bd">
+                <div class="img-wrap img-wrap-3"></div>
+                <p class="des">车险</p>
+            </li>
+            <li class="list-item list-item-bd-r">
+                <div class="img-wrap img-wrap-4"></div>
+                <p class="des">游戏</p>
+            </li>
+            <li class="list-item list-item-bd">
+                <div class="img-wrap img-wrap-5"></div>
+                <p class="des">彩票</p>
+            </li>
+            <li class="list-item list-item-bd">
+                <div class="img-wrap img-wrap-6"></div>
+                <p class="des">电影</p>
+            </li>
+            <li class="list-item list-item-bd">
+                <div class="img-wrap img-wrap-7"></div>
+                <p class="des">酒店</p>
+            </li>
+            <li class="list-item list-item-bd-r">
+                <div class="img-wrap img-wrap-8"></div>
+                <p class="des">理财</p>
+            </li>
+            <li class="list-item list-item-bd">
+                <div class="img-wrap  img-wrap-9"></div>
+                <p class="des">找服务</p>
+            </li>
+            <li class="list-item list-item-bd">
+                <div class="img-wrap img-wrap-10"></div>
+                <p class="des">演出</p>
+            </li>
+            <li class="list-item list-item-bd">
+                <div class="img-wrap img-wrap-11"></div>
+                <p class="des">水电煤</p>
+            </li>
+            <li class="list-item list-item-bd-r">
+                <div class="img-wrap img-wrap-12"></div>
+                <p class="des">火车票</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

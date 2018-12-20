@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0
+    }
+    
+    .common {
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #eee;
+    }
+    
+    .top {
+        height: 60px;
+        line-height: 60px;
+    }
+    
+    .banner {
+        height: 160px;
+        margin-top: 10px;
+        line-height: 160px;
+    }
+    
+    .main {
+        /* height: 260px; */
+        margin-top: 10px;
+        line-height: 260px;
+        background-color: #fff
+    }
+    
+    .main-l {
+        float: left;
+        width: 300px;
+        height: 260px;
+        background-color: #eee
+    }
+    
+    .main-r {
+        float: left;
+        width: 890px;
+        height: 260px;
+        background-color: #eee;
+        margin-left: 10px;
+    }
+    
+    .footer {
+        height: 60px;
+        margin-top: 10px;
+        line-height: 60px;
+    }
+    
+    .clearfix:after {
+        content: '';
+        display: block;
+        clear: both
+    }
+    
+    .clearfix {
+        zoom: 1
+    }
+</style>
+
+<body>
+    <div class="common top">top</div>
+    <div class="common banner">banner</div>
+    <div class="common main clearfix">
+        <!-- 
+
+            盒子（支持宽高）如何在一行显示？
+            1、将盒子设置成行内块
+            2、让盒子浮动（优先选用）
+
+            浮动比较稳定、浮动的元素之间没有间隙
+
+         -->
+        <div class="main-l"></div>
+        <div class="main-r"></div>
+    </div>
+    <div class="common footer">footer</div>
+</body>
+
+</html>

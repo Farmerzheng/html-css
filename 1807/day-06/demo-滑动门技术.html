@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0
+    }
+    
+    .l {
+        float: left;
+    }
+    
+    .r {
+        float: right;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none
+    }
+    
+    .nav {
+        height: 76px;
+        background-image: url(images/nav-bg.png);
+        background-repeat: repeat-x;
+        background-size: 100% 100%;
+    }
+    
+    .nav .logo,
+    .nav .logo a,
+    .nav .logo img {
+        height: 48px;
+        display: block
+    }
+    
+    .nav .logo {
+        margin-left: 30px;
+        margin-top: 14px;
+    }
+    
+    .nav .nav-wrapper {
+        margin-top: 21px;
+    }
+    
+    .nav .nav-item {
+        float: left;
+        height: 33px;
+        margin: 0 8px;
+        line-height: 33px;
+        /* background-color: red; */
+    }
+    
+    .nav .nav-item .nav-link,
+    .nav .nav-item .nav-inner {
+        display: block;
+        color: #fff;
+    }
+    
+    .nav .nav-item .nav-link:hover,
+    .nav .nav-item .nav-inner:hover {
+        background-image: url(images/bg.png);
+    }
+    
+    .nav .nav-item .nav-link {
+        background-position: left top;
+        padding-left: 13px;
+    }
+    
+    .nav .nav-item .nav-inner {
+        background-position: right top;
+        padding-right: 10px;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <div class="logo l">
+            <a href=""><img src="images/logo.png" alt=""></a>
+        </div>
+        <ul class="nav-wrapper r">
+            <li class="nav-item">
+                <a href="" class="nav-link">
+                    <span class="nav-inner">首页</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">
+                    <span class="nav-inner">帮助与反馈</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">
+                    <span class="nav-inner">公众平台</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">
+                    <span class="nav-inner">开放平台</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">
+                    <span class="nav-inner">微信支付</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

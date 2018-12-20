@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none
+    }
+    
+    .nav {
+        line-height: 60px;
+        font-size: 0;
+        text-align: center;
+        background-color: blue
+        /* text-align、line-height、font-： 都能被继承
+        
+          修饰文本的属性一般都能被继承
+         */
+    }
+    
+    .nav-item {
+        display: inline-block;
+        width: 200px;
+        /* 单行文本垂直居中： height=line-height */
+        /* 行高能够被继承 */
+        height: 60px;
+        background-color: red;
+        font-size: 20px;
+        border: 1px solid yellow
+    }
+    
+    .nav-item-link {
+        display: block;
+    }
+    
+    .nav-item-link:hover {
+        background-color: pink
+    }
+</style>
+
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+            <a href="http://www.baidu.com" class="nav-item-link">新闻</a>
+        </li>
+        <li class="nav-item">
+            <a href="http://www.baidu.com" class="nav-item-link">新闻</a>
+        </li>
+        <li class="nav-item">
+            <a href="http://www.baidu.com" class="nav-item-link">新闻</a>
+        </li>
+        <li class="nav-item">
+            <a href="http://www.baidu.com" class="nav-item-link">新闻</a>
+        </li>
+        <li class="nav-item">
+            <a href="http://www.baidu.com" class="nav-item-link">新闻</a>
+        </li>
+    </ul>
+</body>
+
+</html>

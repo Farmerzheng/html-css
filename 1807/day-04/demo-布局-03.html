@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0
+    }
+    
+    .clearfix:after {
+        content: '';
+        display: block;
+        clear: both
+    }
+    
+    .clearfix {
+        zoom: 1
+    }
+    
+    .top {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background-color: #eee;
+    }
+    
+    .banner {
+        width: 1200px;
+        height: 100px;
+        background-color: #eee;
+        margin: 0 auto;
+        margin-top: 10px;
+        line-height: 100px;
+        text-align: center
+    }
+    
+    .list {
+        width: 1200px;
+        /* height: 200px; */
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+    .list .list-item {
+        float: left;
+        width: 292px;
+        background-color: #eee;
+    }
+    
+    .list-eat .list-item {
+        height: 200px;
+    }
+    
+    .list-wear .list-item {
+        height: 300px;
+    }
+    
+    .interval {
+        margin-left: 11px;
+    }
+    
+    .interval1 {
+        margin-left: 10px;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 60px;
+        margin-top: 10px;
+        line-height: 60px;
+        text-align: center;
+        background-color: #eee;
+    }
+</style>
+
+<body>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="list list-eat clearfix">
+        <div class="list-item"></div>
+        <div class="list-item interval"></div>
+        <div class="list-item interval"></div>
+        <div class="list-item interval interval1"></div>
+    </div>
+    <div class="list list-wear clearfix">
+        <div class="list-item"></div>
+        <div class="list-item interval"></div>
+        <div class="list-item interval"></div>
+        <div class="list-item interval interval1"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

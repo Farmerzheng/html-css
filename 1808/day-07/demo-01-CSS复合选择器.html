@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        CSS 选择器的作用？
+        选中要调整样式的元素（快速定位到操作目标）
+
+        CSS 选择器分类？
+
+        基础选择器：通用选择器、标签选择器、类选择器、id选择器
+        复合选择器：是由基础选择器构成的
+
+
+        复合选择器有哪些？
+        
+        1、后代选择器( 父选择器 + 空格 + 子选择器 + 空格 + 孙子选择器+……………………)
+
+        .site-nav-bd  .site-nav-bd-l {} -----》由类选择器构成
+
+        .google span { } -----》 由类选择器 和 标签选择器 构成
+
+        #nav span {} -----》 由 id选择器 和 标签选择器构成
+
+        总之，复合选择器 是由 基础选择器 构成的
+          
+        2、父子选择器 (.site-nav>.site-nav-wrapper)
+        3、兄弟选择器 (.site-nav-first~.site-nav-item)
+        4、相邻选择器 (.site-nav-first+.site-nav-item)
+        5、属性选择器 ([属性名='属性值'] 、 [属性名^='属性值开头']、[属性名$='属性结尾'])
+        6、伪类选择器 (:hover---鼠标悬浮时的效果)
+        7、群组选择器 (选择一组，基础选择器之间用 ,  隔开)
+        8、交叉选择器 (尽量少用)
+
+        经常用到的选择器：标签选择器，后代选择器，类选择器，群组选择器，伪类选择器
+
+
+        最常用的是 ： 后代选择器
+
+        后代选择器最好不要超过 三级     
+
+
+
+    -->
+    <div class="site-nav">
+        <div class="site-nav-wrapper">
+            site-nav-wrapper
+            <div class="site-nav-wrapper">site-nav-wrapper</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="site-nav">
+        <p class="site-nav-item site-nav-first">nav-item-一名</p>
+        <p class="site-nav-item">nav-item-一名</p>
+        <p class="site-nav-item">nav-item-一名</p>
+        <p class="site-nav-item">nav-item-一名</p>
+        <p class="site-nav-item">nav-item-一名</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="col-ms-1">col-ms-1</div>
+    <div class="col-ms-2">col-ms-2</div>
+    <div class="col-ms-3">col-ms-3</div>
+    <div class="col-ms-4">col-ms-4</div>
+    <div class="">col-ms-</div>
+    <div class="col-ms-5">col-ms-5</div>
+
+    <a href="http://www.baidu.com">百度</a>
+    <a href="http://www.sohu.com">搜狐</a>
+    <a href="http://www.sina.com">新浪</a>
+    <a href="http://www.51talk.net">51talk</a>
+
+    <!-- 伪类选择器 -->
+    <div class="box"></div>
+
+    <!-- 群组选择器 -->
+
+    <!-- 交叉选择器 -->
+
+    <div class="nav">div</div>
+    <p class="nav">p</p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+<style>
+    /* 
+      需求 ： 让 儿子 出现红色边框（不包括孙子）
+
+      需求 ： 2、3、4、5 变成红色
+
+      需求 ： 2 字体大小变成 20px
+
+      需求 ： 选中所有类名前缀是 col-sm-  的 div ，变成红色
+
+      需求 ： 让 百度变成红色
+
+      需求 ： 选中网址后缀名是 .com 的链接 ，字体变成30px
+
+      需求 ： 鼠标移入红盒子变色，变成黄色
+
+      需求 ： .box 和 a 边框变成 1px  solid  red
+
+      需求 ： 9、选中 类名是nav 的 p,颜色变成红色
+
+     */
+    /* hover 悬浮 */
+    
+    p.nav {
+        /* 拥有nav类的p标签 */
+        color: red;
+        font-size: 50px;
+    }
+    
+    .box,
+    a,
+    p {
+        border: 1px solid red
+    }
+    
+    .box:hover,
+    a:hover {
+        background-color: green
+    }
+    
+    .box:hover {
+        /* background-color: yellow */
+    }
+    
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    
+    a[href$='com'] {
+        font-size: 30px;
+    }
+    
+    a[href='http://www.baidu.com'] {
+        color: red
+    }
+    
+    div[class^=col-ms-] {
+        /* ^ 表示以…………开头 */
+        color: red
+    }
+    
+    .site-nav .site-nav-first+.site-nav-item {
+        font-size: 20px;
+    }
+    
+    .site-nav .site-nav-first~.site-nav-item {
+        color: red
+    }
+    
+    .site-nav>.site-nav-wrapper {
+        /* 选中直接子元素用 > */
+        border: 1px solid red;
+    }
+</style>
+
+</html>

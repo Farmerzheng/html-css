@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+       行内元素不存在上下padding、margin，但是存在左右的margin、padding      
+    
+       行内元素和行内块元素都存在间距
+
+       如何去掉间距？
+
+       为父元素设置 font-size:0
+     */
+    
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: bisque;
+        font-size: 0;
+        /* 盒子阴影 */
+        box-shadow: 8px 8px 10px #aaa;
+    }
+    
+    .box>span {
+        font-size: 14px;
+        /* border: 1px solid blueviolet; */
+        margin-top: 100px;
+        padding-top: 100px;
+        margin-left: 30px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+    </div>
+</body>
+
+</html>

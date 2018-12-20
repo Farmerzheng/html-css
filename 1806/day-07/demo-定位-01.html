@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .absolute {
+        position: absolute;
+        background-color: red;
+    }
+</style>
+
+<body>
+    <!-- 
+      定位： position 
+
+      position：static 、relative 、absolute 、fixed
+
+      static : 静态定位(默认值)
+
+      relative: 相对定位 
+
+      position 要配合 left、top、right、bottom 属性使用
+
+      relative的特点？
+
+        1、不会脱离文档流
+
+        2、坐标原点：自身盒子的左上角点
+
+
+      absolute: 绝对定位
+      
+      absolute 特点？
+
+      1、脱离文档流
+
+      2、坐标原点是 邻近的 具有定位的 父盒子的左上角点
+
+         body 默认的定位方式是 relative
+
+         除了body 以外 , 所有标签的定位方式 都是 static
+
+      fixed : 固定定位
+      
+      fixed特点？
+
+      1、 脱离文档流
+
+      2、 坐标原点是窗口的左上角点
+
+      四种定位方式中，脱离文档流的是：absolute、fixed 不脱离的是：relative 、static
+
+      坐标原点？
+
+      static :没有坐标原点
+      relatic: 自身的左上角点
+      absolute: 父盒子的左上角点（父盒子要有定位relative、absolute、fixed）
+      fixed : 窗口的左上角点
+
+     -->
+
+    <div class="box">
+        融机构监管、疫苗管理、国家发展规划、
+        <span class='absolute'>促进小农户</span>与现代农业发展衔接等出台了一系列改革新措施，就是结合实践中的难题，以改革的思路和方法加以破解的重要佐证。地分析了当前改革的大好形势，就如何抓改革、抓落实提出了明确的要求，为深入推进改革注入了强大的动力。我们要深刻领会习近平总书记的重要讲话精神，以问题为导向，主动担当，敢于作为，狠抓落实，将全面深化改革稳步推进。 习近平总书记指出，改革重在落实，也难在落实。正确的战略需要正确的战术来落实和执行，落实才能出成绩，执行才能见成效。从十八届三中全会铺开全面深化改革的大棋局开始，许多关键环节、重要方面的改革部署先后“落子”，全面深化改革各项工作有条不紊、扎实推进。我们要抓住大好机遇，进一步加强党对改革工作的领导，做到真抓实干，善作善成，将各项改革落实到位、改出成效。此次会议就推动高质量发展、区域协调发展、自贸区深化改革创新、金融机构监管、疫苗管
+    </div>
+
+</body>
+
+</html>

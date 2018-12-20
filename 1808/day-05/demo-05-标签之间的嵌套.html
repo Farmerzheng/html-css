@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+
+      块状元素：独占一行，可以设置宽高
+      div,ul,li,p,h1~h6,ol,dl,dt,dd,table,form
+      行内元素：不独占一行，不可以设置宽高
+      span,a,strong,em,del,ins,b,s,u,i
+      行内块元素：不独占一行，可以设置宽高，但是存在间隙，为父元素设置font-size：0可以
+                 去掉间隙
+      img,input,textarea           
+
+      1、块状元素可以嵌套行内元素
+        <li><a></a></li>
+
+      2、行内元素不可以嵌套块状元素
+        <a><li></li></a> 不对的
+       
+      3、行内元素可以嵌套行内元素
+      
+        <span>
+            我的
+            <em>苹果</em>
+            <strong>好吃</strong>
+        </span>
+
+       4、块状元素可以嵌套块状元素？
+         
+        不完全正确
+
+        p和 h1~h6 标签内不能放块状元素
+
+       5、行内元素可以嵌套行内块元素
+
+         <a><img src=''></a>
+
+        6、行内块可以放行内元素，也可以放块状元素 
+
+     -->
+    <div>
+        <p>这是一段话</p>
+    </div>
+    <p>
+        <div>这是一个div</div>
+    </p>
+</body>
+
+</html>

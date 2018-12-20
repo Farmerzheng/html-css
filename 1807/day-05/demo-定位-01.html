@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: chartreuse
+    }
+    
+    div {
+        /* position: relative;
+        left: 100px;
+        top: 100px; */
+        margin-top: 200px;
+        margin-left: 200px;
+        width: 300px;
+        height: 300px;
+        background-color: yellow;
+    }
+    
+    div>span {
+        position: absolute;
+        background-color: red;
+        left: 10px;
+        top: 50px;
+    }
+</style>
+
+<body>
+    <!-- 
+       定位属性：positon 
+       定位：确定位置
+       position 属性的属性值有哪些？
+
+        position:static  (静态定位)
+        position:relative  （相对定位）
+        position:absolute   （绝对定位）
+        position:fixed  （固定定位）
+
+        position属性的默认值是 static
+        
+        positon 属性要配合哪些属性来用？
+         
+        left、right、top、bottom 四个CSS 属性
+
+        学习四种定位的特点！
+
+        static？
+        是position 属性的默认值
+        static 不会让元素脱离文档流
+        设置 left top right bottom 值无效
+
+        relative ?
+        元素不会脱离文档流
+        设置 left top right bottom 值有效
+        坐标原点是自身的左上角点
+
+        absolute?
+        元素脱离文档流
+        坐标原点是邻近的具有定位的（relative\absolute\fixed）父元素的左上角点
+
+        fixed?
+        元素脱离文档流
+        坐标原点是浏览器窗口的左上角点
+
+        
+        总结
+        1、哪种定位方式会脱离文档流？
+         absolute、fixed
+
+        2、几种定位方式的坐标原点分别是什么？
+           static: 无坐标原点
+           relative : 自身左上角点
+           absolute : 父元素左上角点
+           fixed ： 浏览器窗口的左上角点        
+        
+
+    -->
+
+    <div>
+        得到了不该得到的得到 就一定会失去不该失去的失去
+        <span>只有忍受别人不能忍受的忍受</span> 才能享受别人享受不了的享受
+    </div>
+</body>
+
+</html>

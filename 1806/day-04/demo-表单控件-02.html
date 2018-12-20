@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .comment {
+        width: 600px;
+        height: 200px;
+        border: 1px solid #aaa;
+    }
+    
+    .comment form {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .comment .title {
+        font-size: 26px;
+        color: blue;
+    }
+    
+    .comment .subtitle {
+        font-size: 18px;
+        color: #999;
+    }
+    
+    .comment .user-input {
+        width: 90%;
+        height: 100px;
+        /*禁止高亮*/
+        outline: none;
+    }
+    
+    .login {
+        width: 100%;
+        border-top: 1px solid #aaa
+    }
+    
+    .login-btn {
+        width: 83px;
+        height: 39px;
+        font-size: 18px;
+        border: none;
+        color: #fff;
+        background-color: blue;
+        border-radius: 5px;
+    }
+    
+    .login-btn:focus {
+        outline: 0;
+    }
+</style>
+
+<body>
+    <div class="comment">
+        <form action="">
+            <div class="">
+                <span class="title">网友评论</span>
+                <span class="subtitle">文明上网理性发言，请遵守新闻评论服务协议</span>
+            </div>
+            <div>
+                <textarea class="user-input" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="login">
+                <input class="login-btn" type="submit" value="提交">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

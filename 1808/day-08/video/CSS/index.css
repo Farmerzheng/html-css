@@ -1,0 +1,129 @@
+ body {
+     margin: 0;
+     padding: 0;
+     background-color: #eee;
+     color: #333;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: #000
+ }
+ 
+ a:hover {
+     text-decoration: none
+ }
+ 
+ h1,
+ h2,
+ ul,
+ li {
+     margin: 0;
+     padding: 0
+ }
+ 
+ ul,
+ li {
+     list-style: none;
+ }
+ 
+ h1 {
+     position: fixed;
+     left: 0;
+     top: 0;
+     z-index: 1000;
+     width: 100%;
+     height: 60px;
+     margin: 0;
+     font-size: 20px;
+     text-align: center;
+     background-color: #d7d5d5;
+     box-shadow: 0px 5px 6px #999;
+     background-image: url(../images/logo.png);
+     background-repeat: no-repeat;
+     background-size: auto 80%;
+     background-position: 60px center;
+     text-indent: -9999px;
+ }
+ 
+ .sidebar {
+     display: none;
+     position: fixed;
+     left: 0;
+     top: 0;
+     z-index: 1001;
+     width: 200px;
+     height: 100vh;
+     background-color: #fff;
+ }
+ 
+ .sidebar .sidebar-title {
+     width: 100%;
+     height: 60px;
+     background-image: url(../images/logo-side.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center center;
+     text-indent: -9999px;
+     border-bottom: 1px solid #999;
+ }
+ 
+ .sidebar .sidebar-item {
+     display: block;
+     width: 100%;
+     height: 50px;
+     border-bottom: 1px solid #ccc;
+     text-align: center;
+     line-height: 50px;
+     font-size: 16px;
+ }
+ 
+ .sidebar .sidebar-close-btn {
+     position: absolute;
+     top: 8px;
+     right: -54px;
+     width: 52px;
+     height: 45px;
+     background-color: #fff;
+     border-radius: 4px;
+     border: 1px solid #eee;
+     z-index: 30;
+ }
+ 
+ .sidebar .side-btn-bar {
+     display: block;
+     width: 30px;
+     height: 2px;
+     position: absolute;
+     left: 50%;
+     margin-left: -15px;
+     background-color: #666;
+     transition: all 1s;
+ }
+ 
+ .sidebar .side-btn-bar-01 {
+     top: 10px;
+ }
+ 
+ .sidebar .side-btn-bar-02 {
+     top: 21px;
+     opacity: 1;
+ }
+ 
+ .sidebar .side-btn-bar-03 {
+     top: 30px;
+ }
+ 
+ .page-title {
+     text-align: center;
+     margin: 80px 0 20px 0;
+ }
+ 
+ .center {
+     position: relative;
+     z-index: 1;
+ }
+ 
+ video {
+     width: 100%;
+ }

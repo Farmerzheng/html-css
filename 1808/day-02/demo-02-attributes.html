@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<!-- 
+   style 标签的作用？
+   style 标签内用于书写CSS   
+ -->
+<style>
+    /* 
+       CSS选择器？选择标签用的（定位到目标元素）
+
+       
+       
+       a ： CSS 中的选择器
+  
+       {} ：里面书写CSS样式
+
+       text-decoration:none;
+
+       text : 文本
+
+       decoration: 修饰、装饰
+
+       none : 无
+
+       text-decoration : 样式名
+
+       none :样式值
+
+       样式名与样式值之间用 ：连接
+
+       样式与样式之间用 ; 连接
+
+       最后一个样式 ;  可以省略
+
+
+     */
+    
+    a {
+        text-decoration: none;
+        color: red;
+        background-color: yellow
+    }
+    /* 通过id值选中百度
+        CSS选择器有不同的类型
+        标签名 : 标签选择器
+        #id值 ： id 选择器
+    
+     */
+    
+    #link-baidu {
+        /* 
+         border : 边框
+         solid : 实心的
+         dotted : 点
+         dashed : 虚线
+         */
+        border: 1px dashed green;
+    }
+    /* 
+       class 也是一个通用属性
+       class 中文译为 :类
+       class 不同标签的class属性值可以相同
+       有相同特征的标签我们一般给相同的class值
+       类选择器 ： .类名
+
+     */
+    
+    .link-sina {
+        border: 1px solid purple;
+    }
+    /* #link-sohu {
+        border: 1px solid black;
+    } */
+</style>
+
+<body>
+    <!-- 
+        a : 标签
+        a : 双标签
+        a : 标签里面的内容会展示在浏览器上
+        a : 就是超链接标签
+        a : anchor(锚点)
+        href 是 a 标签的属性
+        href 属性值是 URL
+        id（identify） 属性是一个通用属性
+        通用属性：谁都可以用
+        常见的通用属性：id、class、style
+        通用属性值可以自定义
+        link-one 是我们自定义的值
+        id 属性的特点？
+        标签的唯一标识，就像标签的身份证号一样，每个标签的id值不能重复
+
+        如何让所有 a 下划线去掉，变成红色，背景黄色
+        a {
+            text-decoration: none;
+            color: red;
+            background-color: yellow
+        }
+        如何让 ‘百度’ 有一个绿色边框?
+
+        #link-baidu {
+           border: 1px dashed green;
+        }
+        如何让 “新浪” 有一个紫色边框？
+
+        .link-sina {
+           border: 1px solid purple;
+        }
+
+        如何让 “搜狐” 有一个黑色边框？
+
+        style="border:1px solid black"
+
+        id 和 class 区别？
+
+        id 值 不能重复
+        class 值 可以重复
+     -->
+
+
+    <a id="link-baidu" href="http://www.baidu.com">百度</a>
+    <a id="link-sohu" href="http://www.sohu.com" style="border:1px solid black">搜狐
+    </a>
+
+    <a href="http://www.sina.com" class="link-sina">新浪</a>
+    <a href="http://www.sina.com" class="link-sina">新浪</a>
+</body>
+
+</html>

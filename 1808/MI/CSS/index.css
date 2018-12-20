@@ -1,0 +1,231 @@
+/*
+* CSS index.html v1.0
+* 
+* Copyright 2018
+* Dual licensed under the MIT or GPL Version 2 licenses.
+*
+* Designed and built by wangzheng 
+* 
+*/
+
+
+/* site-nav */
+
+.layer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.site-nav {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: red;
+    font-size: 12px;
+    /* color: #a69d8a !important; */
+}
+
+
+/* .site-nav .site-nav-wrap {
+    width: 1200px;
+    height: 40px;
+    background-color: blue;
+    margin: 0 auto;
+} */
+
+.site-nav .site-nav-l {
+    float: left;
+    height: 40px;
+    background-color: pink;
+}
+
+.site-nav .site-nav-l ul {
+    height: 40px;
+}
+
+.site-nav .site-nav-r {
+    float: right;
+    /* width: 200px; */
+    height: 40px;
+    background-color: deeppink;
+}
+
+.site-nav .site-nav-item {
+    float: left;
+}
+
+.site-nav .site-nav-link {
+    padding: 0 7px;
+    color: #a69d8a;
+}
+
+.site-nav .first {
+    /* padding: 0 7px 0 0; */
+    padding-left: 0
+}
+
+.site-nav .site-nav-r-info {
+    float: right
+}
+
+.site-nav .site-nav-r .site-nav-item {
+    float: right;
+}
+
+.site-nav .site-nav-cart {
+    /* 宽度 */
+    width: 120px;
+    /* 背景 */
+    background-color: #424242;
+    /* 文本水平居中 */
+    text-align: center
+}
+
+
+/* product-list */
+
+.product {
+    height: 450px;
+    width: 100%;
+}
+
+.product .product-list {
+    float: left;
+    position: relative;
+    z-index: 1000;
+    width: 230px;
+    height: 450px;
+    background-color: red;
+    line-height: 40px;
+}
+
+.product .product-list>ul {
+    background-color: yellow;
+    margin-top: 24px;
+}
+
+.product .product-item {
+    height: 40px
+}
+
+.product .product-item:hover {
+    background-color: orange
+}
+
+.product .product-banner {
+    position: relative;
+    width: 1200px;
+    height: 450px;
+}
+
+.product .banner-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.product .banner-item a,
+.product .banner-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* main-product */
+
+.main-product {}
+
+.main-product .main-product-l {
+    float: left;
+}
+
+.main-product .main-product-r {
+    float: right;
+}
+
+.main-product .main-product-r .item {
+    float: right;
+    width: 310px;
+    height: 166px;
+}
+
+.main-product .item .link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main-product .item .link>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main-product .item-margin {
+    margin-left: 15px;
+}
+
+
+/* search */
+
+.search-bd {
+    height: 98px;
+}
+
+.search-bd .search-logo {
+    float: left;
+    width: 54px;
+    height: 54px;
+    margin-top: 22px;
+    background-color: #ff6700
+}
+
+.search-bd .search-logo img {
+    display: block;
+    margin: 17px auto
+}
+
+.search-bd .search-list {
+    float: left;
+    margin: 40px 0 0 230px;
+}
+
+.search-bd .search-item {
+    float: left;
+    padding: 0 10px;
+}
+
+.search-bd .search-link {
+    color: #493b59
+}
+
+.search-bd .search-box {
+    float: right;
+    width: 290px;
+    height: 50px;
+    margin-top: 24px;
+    background-color: yellow;
+    border: 1px solid #e8e8e8
+}
+
+.search-bd .search-box>input {
+    float: left;
+    height: 100%;
+    width: 238px;
+    padding: 0;
+    border: 0;
+    outline: none;
+    text-indent: 10px;
+    font-size: 18px;
+}
+
+.search-bd .search-box>button {
+    float: right;
+    width: 52px;
+    height: 50px;
+    background: red;
+    border-left: 1px solid #e8e8e8
+}

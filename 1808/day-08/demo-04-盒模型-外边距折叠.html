@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+<style>
+    /* 
+      外边距折叠：上下接触的两个外边距会发生重叠
+
+      重叠后的值是多少？重叠后的值是较大的那个外边距值
+
+      永远不要让垂直方向的两个盒子的外边距相接触
+
+
+
+    */
+    
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+</body>
+
+</html>

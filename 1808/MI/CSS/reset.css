@@ -1,0 +1,30 @@
+/*
+* CSS reset v1.0
+* 
+* Copyright 2018
+* Dual licensed under the MIT or GPL Version 2 licenses.
+*
+* Designed and built by wangzheng 
+* 
+*/
+
+body,
+ul,
+h1 {
+    margin: 0;
+    padding: 0
+}
+
+input,
+button {
+    border: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}

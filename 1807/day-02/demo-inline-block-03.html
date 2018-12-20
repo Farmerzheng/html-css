@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /*
+    
+     行内块之间存在间隙
+
+     如何去掉行内块的间隙呢？为父元素设置font-size:0
+    
+    
+     */
+    
+    .box {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: green;
+    }
+</style>
+
+<body style='font-size:0'>
+    <img src="images/A8.png" alt="">
+    <img src="images/A8.png" alt="">
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>

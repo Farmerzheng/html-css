@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* 向 .box 的最前面添加一个伪元素 */
+    
+    .box:before {
+        /* 伪元素最重要属性，不可缺少，content 的值需要加上引号，可以为空，也可以有具体内容 */
+        content: '123';
+        background-color: red
+    }
+    /*向 .box 的最后面添加一个伪元素 */
+    
+    .box:after {
+        content: '456'
+    }
+</style>
+
+<body>
+    <!-- 
+    伪元素  
+
+    元素 ：html 中的标签
+    伪元素 ： 在html中没有实际的标签,但是可以和标签一样，设置内容样式
+    伪元素的表示方法 ：   :before 和 :after
+    :before  作用？ 向标签的最前面添加一个元素
+    :after 作用？向标签的最后面添加一个元素
+
+    伪元素应用场景？
+    
+     一般不需要在html中显示的内容，我们用伪元素
+
+     应用伪元素的好处？
+    1、简化 html 结构
+    2、有利于搜索引擎优化
+
+    常用伪元素做什么？
+    绘制一些图形
+
+    如何用伪元素绘制图形？
+
+    定位，给标签相对定位，给伪元素绝对定位（:before 和 :after 都是标签的子元素）
+
+    
+
+
+
+
+ -->
+
+    <div class="box">
+        <span>span1</span>
+        <span>span2</span>
+        <span>span3</span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .father {
+        border: 2px solid red;
+    }
+    
+    .father .child {
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: yellow
+    }
+    
+    .clearfix:after {
+        /* 为伪元素添加内容，内容为空 */
+        content: '';
+        /* 将添加的内容变成块状元素 */
+        display: block;
+        /* 伪元素两边不能有浮动元素 */
+        clear: both
+    }
+    /* 兼容低版本浏览器 */
+    
+    .clearfix {
+        zoom: 1
+    }
+</style>
+
+<body>
+    <!-- 
+       1、浮动的子元素支撑不起父元素的高度
+       2、可以直接给父元素添加高度来解决上面的问题
+       3、以上做法子元素高度改变了，父元素高度不会随之改变
+       4、如何才能做到让浮动的子元素能够撑起父元素高度？？？
+       5、如何让浮动的子元素撑起父元素高度？？？
+       为父元素添加一个clearfix 类，类的书写形式是
+       .clearfix:after{
+           content:'';
+           display:block;
+           clear:both
+       }
+       .clearfix{
+           zoom:1
+       }
+
+     -->
+
+    <div class="father clearfix">
+        <div class="child"></div>
+    </div>
+
+</body>
+
+</html>

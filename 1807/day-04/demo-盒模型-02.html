@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+<style>
+    /* 
+    
+       水平居中
+
+       文本水平居中：        给父盒子设置text-align:center
+       行内元素水平居中:     给父盒子设置text-align:center
+       行内块元素水平居中：  给父盒子设置text-align:center
+       块状元素水平居中  ：  给元素自身设置 margin:0 auto
+
+       单行文本垂直居中？ line-height = height(文本的行高等于盒子自身的高度)
+
+       如何上下左右都居中?    
+    
+     */
+    
+    .box:nth-child(2n) {
+        /* 
+        选中偶数的box
+        nth : 第几个
+        */
+        background-color: red;
+    }
+    
+    .box:nth-child(2n+1) {
+        /* 选中奇数的box */
+        background-color: blue;
+    }
+    
+    .box {
+        text-align: center
+    }
+    
+    .box2>span {
+        background-color: yellow
+    }
+    
+    .box3>span {
+        display: inline-block;
+        background-color: purple;
+        width: 100px;
+        height: 100px
+    }
+    
+    .box4 {
+        width: 100px;
+        height: 50px;
+        /* 
+           margin: 0 auto
+           0 : 上下边距是 0 
+           auto : 左右自动对齐
+         */
+        margin: 0 auto;
+        background-color: orange
+    }
+    
+    .box5 {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+    }
+    
+    .box5 .box5-child {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <!-- 居中问题 -->
+    <div class="box box1">div</div>
+    <div class="box box2">
+        <span>span</span>
+    </div>
+    <div class="box box3">
+        <span>inline-block</span>
+    </div>
+    <div class="box box3">
+        <span>inline-block</span>
+        <span>inline-block</span>
+        <span>inline-block</span>
+    </div>
+    <div class="box4">block</div>
+
+    <div class="box5">
+        <div class="box5-child"></div>
+    </div>
+</body>
+
+</html>

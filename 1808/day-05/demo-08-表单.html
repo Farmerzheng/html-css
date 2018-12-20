@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    textarea {
+        vertical-align: top
+    }
+</style>
+
+<body>
+    <!-- 
+        form 是表单当中最外面的标签，类似表格当中的 table
+       
+        action 定义表单数据的提交网址
+
+        method 客户端与服务器数据交互的方法
+
+        method 取值 ：get post
+
+        method 默认值  get
+
+        get 方法：提交的信息拼接在网址后面
+        post 方法 ：提交的信息放入了请求体当中
+        
+        ?name=王争&password=123&sex=woman
+        ? : 查询的意思
+        name :参数名
+        王争 ： 参数值
+        参数之间用 &
+        参数名与参数值之间用 =
+     -->
+    <form action="" method='get'>
+        <!-- 
+            input : 输入
+            output : 输出
+            type : 类型
+            text : 文本
+            submit : 提交
+            value ： 值，价值，取值
+            password :密码
+            快捷键 ： input:submit
+         -->
+
+        <div>
+            <label for="name"> 姓名</label>
+            <input type="text" id='name' name='name'>
+        </div>
+        <div>
+            <label for="password"> 密码</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <input type="radio" name="sex" id="" value='man'>男
+            <input type="radio" name="sex" id="" value='woman'>女
+        </div>
+        <div>
+            <label class="" for="">
+                爱好
+            </label>
+            <input type="checkbox" name="" id="">篮球
+            <input type="checkbox" name="" id="">足球
+            <input type="checkbox" name="" id="">乒乓球
+        </div>
+        <div>
+            <!-- 
+                select : 选择
+                option : 选项
+             -->
+            <label for="">城市</label>
+            <select name="" id="">
+                <option value="">北京</option>
+                <option value="">上海</option>
+                <option value="">广州</option>
+            </select>
+        </div>
+        <div>
+            <label for="comment">评论</label>
+            <!-- 文本域 -->
+            <textarea name="" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <!-- html5 新增的表单控件 -->
+            <input type="number">
+            <input type="url">
+            <input type="email">
+            <input type="date">
+            <input type="time">
+        </div>
+        <div>
+            <input type="submit" value="提交">
+            <input type="button" value="按钮">
+            <input type="reset" value="重置">
+            <button>普通按钮</button>
+        </div>
+
+    </form>
+</body>
+
+</html>

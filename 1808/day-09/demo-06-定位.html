@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+<style>
+    span {
+        /* 
+        position:位置
+        static :静态的
+        static 是 position 的默认属性值
+        relative : 相对的
+        absolute :绝对的
+        fixed ： 固定的
+
+        position : static/relative/absolute/fixed
+
+        1、static 设置 left/right/top/bottom 不起作用
+
+        2、relative\absolute\fixed 都能和 left/right/top/bottom 配合使用
+
+        3、relative :  移动的起始点是 自身的左上角点
+            
+           absolute :  移动的起始点是 父元素(父元素要有relative/absolute/fixed)的左上角点 
+
+            如果父元素没有定位（relative/absolute/fixed），那么子元素会向上继续查找，直到找到有定位的父
+            
+            元素，如果还没有，那么最后是 body
+
+            absolute 移动的起始点是邻近的具有定位的父元素
+
+           fixed    :   移动的起始点是窗口的左上角点
+
+
+         position 属性 需要配合  left\right\top\bottom 属性一起使用
+
+         body 标签的定位方式是相对定位的
+                    
+         */
+        position: static;
+        background-color: red
+    }
+</style>
+
+<body>
+
+    <p>
+        二战以后，主要参战国政府大多设立<span>国家级哀悼日</span>。用国家公祭的形式来祭奠死难的国</p>
+
+</body>
+
+</html>

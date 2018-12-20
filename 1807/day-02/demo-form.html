@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+        action  是 form 标签的属性
+
+        action 属性值是 要提交的网址
+
+        input 标签
+
+        input 的type 属性 决定了 input 的类型
+
+        label 一般用于表单当中，与 input 配合使用
+
+        label 的 for 属性值 要和 input 的 id 属性值一致
+
+        这样写的好处？ 点击label内文本的时候，会让输入框获得焦点
+
+        <input type='radio'> 是单选框，只能有一个被选中，
+
+        需要给radio 相同的name 属性值，否则就不是单选框了
+
+        demo-a.html?name=王争&password=123
+
+        ？ 表示查询
+
+        ？ 后面携带参数
+
+        name=王争&password=123
+
+        参数由参数名和参数值
+
+        参数名与参数值用等号链接
+
+        参数之间用 & 链接
+
+     -->
+    <form action="demo-a.html">
+        <div>
+            <label for="name">姓名</label>
+            <!-- name 属性的值对应着参数名 -->
+            <input type="text" id='name' name='name'>
+        </div>
+        <div>
+            <label for="password">密码</label>
+            <input type="password" id='password' name='password'>
+        </div>
+
+        <!--单选框 -->
+        <div>
+            <label for="">性别</label>
+            <input type="radio" name='sex'>男
+            <input type="radio" name='sex'>女
+        </div>
+
+        <!-- 复选框 -->
+        <div>
+            <label for="">爱好</label>
+            <input type="checkbox" name="" id="">打篮球
+            <input type="checkbox" name="" id="">打乒乓球
+            <input type="checkbox" name="" id="">打台球
+        </div>
+        <div>
+            <label for="">城市</label>
+            <select name="city" id="">
+                <option value="beijing">北京</option>
+                <option value="shanghai">上海</option>
+                <option value="guangzhou">广州</option>
+            </select>
+        </div>
+        <div>
+            <label for="time">出生日期</label>
+            <input type="date" name="time" id="time">
+        </div>
+        <div>
+            <label for="comment">评论</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- 普通的按钮，不会提交表单 -->
+        <input type="button" value='按钮'>
+        <!-- 表单提交按钮，点击会提交表单，默认值是'提交' -->
+        <!-- input 作为按钮使用的时候， value 属性的值就是按钮显示的文本 -->
+        <input type="submit" value='提交表单'>
+        <button>按钮</button>
+
+
+        <!-- 重置按钮 -->
+        <input type="reset" value="重置">
+    </form>
+</body>
+
+</html>

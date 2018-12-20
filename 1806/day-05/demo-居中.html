@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .nav {
+        text-align: center;
+        line-height: 30px;
+        font-size: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .nav-link {
+        /* 将元素转化成行内块 */
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        background-color: red;
+        font-size: 14px;
+    }
+    /* 
+       text-align 设置在父盒子上面
+       text-align 能够让标签里面的文本居中
+       text-align 能够让所有的行内元素居中
+       text-algin 能够继承，想要居中的话，为父盒子设置 text-align:center 就行了
+
+       盒子内的文本如何才能垂直居中？盒子的高度 === 行高
+
+       行高也能继承
+
+       text-align 和 line-height 都能被子元素继承
+
+       text-align 和 line-height 一般为父元素设置  
+
+       行内块默认彼此存在间距
+
+       如何去除，行内块之间的间距？
+
+       给父元素设置，font-size:0 (子元素重新设置font-size)
+     
+     */
+</style>
+
+<body>
+    <p class="nav">
+        <a class="nav-link" href="">新闻</a>
+        <a class="nav-link" href="">新闻</a>
+        <a class="nav-link" href="">新闻</a>
+        <a class="nav-link" href="">新闻</a>
+        <a class="nav-link" href="">新闻</a>
+    </p>
+    <p style='text-indent: 20px;'>今天去哪个食堂吃饭，去轨道交通学院的食堂，那里的鲅鱼很好吃</p>
+</body>
+
+</html>

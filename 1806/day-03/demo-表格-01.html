@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        width: 600px;
+        /* 合并表格的边框 collapse 倒塌、崩塌、瓦解、合并 */
+        border-collapse: collapse
+    }
+    
+    th {
+        color: lightblue
+    }
+    
+    .increase {
+        color: red
+    }
+    
+    td {
+        /* 文本水平居中 */
+        text-align: center;
+        /* 设置行高 */
+        line-height: 40px;
+        /*
+        
+        border: 1px solid red; 
+
+        border: 用于设置标签的边框
+
+        border是几个边框属性的简写形式
+
+        border: border-width border-style border-color       
+
+        1px   : 边框的宽度
+
+        solid ：边框的样式（solid、dashed、dotted）
+        
+        red   : 边框的颜色
+
+        */
+    }
+</style>
+
+<body>
+
+    <!-- 
+      表格之间的嵌套关系？
+
+      table>tr>td
+
+      table 表格最外层标签
+      tr    表格当中的行
+      td    表格当中的单元格
+      th    表格中的表头单元格（文本自动居中且加粗）
+
+      在表格中，标签的嵌套关系不要混乱（table>tr>td、th）
+
+     -->
+    <table border='1px'>
+        <tr>
+            <th>排名</th>
+            <th>名称</th>
+            <th>涨幅</th>
+            <th>成长股</th>
+            <th>涨幅</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>酿酒行业</td>
+            <td class="increase">1.65%</td>
+            <td>古井贡酒</td>
+            <td class="increase">11%</td>
+            <td>咨询</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>家电行业</td>
+            <td class="increase">1.25%</td>
+            <td>华帝股份</td>
+            <td class="increase">12%</td>
+            <td>咨询</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>化肥农药</td>
+            <td class="increase">1.23%</td>
+            <td>四川美丰</td>
+            <td class="increase">11%</td>
+            <td>咨询</td>
+        </tr>
+    </table>
+</body>
+
+</html>

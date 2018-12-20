@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    a {
+        color: #000;
+        text-decoration: none
+    }
+    
+    li {
+        list-style: none;
+    }
+    /* 
+     hover 盘旋、徘徊
+     */
+    
+    .nav {
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    .nav .nav-link {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        background-color: lightpink
+    }
+    
+    .nav .nav-link-hover:hover .nav-sub-link {
+        display: block;
+    }
+    
+    .nav .nav-sub-link {
+        /* display:inline-block */
+        display: none
+    }
+</style>
+
+<body>
+
+    <ul class="nav">
+        <li href="" class="nav-link">
+            <a>新闻</a>
+        </li>
+        <li href="" class="nav-link">
+            <a href="">电影</a>
+        </li>
+        <li href="" class="nav-link">
+            <a href="">音乐</a>
+        </li>
+        <li href="" class="nav-link nav-link-hover">
+            <a href="">图片</a>
+            <ul class="nav-sub-link">
+                <li>帅哥图片</li>
+                <li>美女图片</li>
+                <li>郑杰图片</li>
+            </ul>
+        </li>
+        <li href="" class="nav-link">
+            <a href="">地图</a>
+        </li>
+    </ul>
+</body>
+
+</html>

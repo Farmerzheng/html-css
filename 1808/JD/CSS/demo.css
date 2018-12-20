@@ -1,0 +1,74 @@
+.layer {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.list .list-item {
+    width: 390px;
+    height: 450px;
+    background-color: red;
+}
+
+.list .list-rank {
+    background-color: #fff;
+}
+
+.list .list-rank .title {
+    height: 60px;
+    line-height: 60px
+}
+
+.list .list-rank .title>em {
+    font-size: 22px;
+}
+
+.list .list-rank .title>i {}
+
+.list .list-rank .title>strong {
+    font-size: 14px;
+    color: #9d9d9d
+}
+
+.list .rank-list {
+    height: 40px;
+    font-size: 11px;
+    background-color: #f0f3ef
+}
+
+.list .rank-item {
+    float: left;
+    line-height: 40px;
+    margin: 0 21px;
+}
+
+.list .rank-link {}
+
+.list .product-list {}
+
+.list .product-item {
+    height: 100px;
+}
+
+.list .product-item a {
+    height: 100px;
+}
+
+.list .product-item img {
+    height: 100%;
+}
+
+.list .product-item p {
+    width: 270px;
+    margin-top: 30px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.list .list-buy {}
+
+.list .list-coupon {}
+
+.list .list-rank,
+.list .list-buy {
+    margin-right: 10px;
+}

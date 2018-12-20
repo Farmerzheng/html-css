@@ -1,0 +1,19 @@
+/* 
+    .css 文件是样式文件
+
+    不要用属性去设置标签样式，要用css去设置标签样式 
+    将结构与表现分离
+
+    好处？
+    1、易于开发、维护
+    2、便于搜索引擎爬取网页
+    */
+
+ul {
+    /* list-style 样式名 */
+    list-style: none;
+}
+
+body {
+    background-color: yellow
+}

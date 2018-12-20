@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    /* CSS选择器的作用？定位目标元素 */
+    /* 标签选择器 */
+    
+    span {
+        color: red
+    }
+    /* 类选择器 */
+    
+    .el1 {
+        background-color: yellow
+    }
+    /* id 选择器 */
+    
+    #el1 {
+        font-size: 30px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .block-el {
+        width: 100px;
+        height: 100px;
+        background-color: pink
+    }
+    /* 
+    
+      行内元素（inline）、块状元素(block)、行内块元素(inline-block)
+    
+      行内元素不独占一行，不支持宽高
+
+      行内块元素（ 例如 img ），不独占一行，但是支持宽高
+
+      块状元素独占一行，支持宽高
+
+      - 如何将一个元素变成行内元素？
+         + 为元素设置 display:inline
+      如何将一个元素变成行内块元素？
+         + 为元素设置 display:inline-block
+      如何将一个元素变成块状元素？
+         + 为元素设置 display: block
+     */
+</style>
+
+<body>
+    <span class="el1" id='el1'>行内元素</span>
+    <div class="block-el">块状元素</div>
+    <img src="images/inner/11111_24.jpg" alt="实验室装修">
+    <img src="images/A8.png" alt="实验室装修">
+</body>
+
+</html>

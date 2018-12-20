@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+      盒模型由四部分组成： content、padding、border、margin
+
+      padding /padding-top/padding-bottom/padding-left/padding-right
+      margin/margin-top/margin-bottom/margin-left/margin-right
+
+      padding:10px (上下左右都是10px)
+
+      padding:10px 20px (上下、左右)
+      
+      padding:10px 20px 30px （上、左右、下）
+
+      padding:10px 20px 30px 40px （上右下左、顺时针）
+
+      margin 同理
+
+      border: 2px solid red (边框的宽度、边框的样式、边框的颜色)
+
+      边框样式：dashed(虚线) 、 dotted(点线)
+
+      外边距折叠?
+      
+      垂直方向的margin相交时，会取较大的margin值（不是两个margin值的叠加）
+
+      margin: 一般用于移动盒子，控制盒子之间的距离
+
+      padding: 一般用于拜放盒子里面的内容
+
+      一般不设置垂直方向的margin(因为会产生外边距折叠)
+
+      垂直方向上一般通过padding 来控制距离
+
+
+     */
+    
+    body {
+        margin: 0
+    }
+    
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /* border: 2px dotted yellow; */
+        /* padding: 10px; */
+        /* border-radius  圆角 */
+        /* border-radius: 20px; */
+        /* border-radius: 50%; */
+    }
+    
+    .box1 {
+        /* margin-bottom: 20px; */
+    }
+    
+    .box2 {
+        margin-top: 10px;
+    }
+    
+    .box3 {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        margin-top: 50px;
+    }
+</style>
+
+<body>
+    <div class="box box1">
+        生富贵人家 享一世繁华 衣来伸手 饭来张口
+    </div>
+    <div class="box box2">
+        <div class="box3"></div>
+    </div>
+</body>
+
+</html>

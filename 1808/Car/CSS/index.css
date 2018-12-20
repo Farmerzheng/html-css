@@ -1,0 +1,322 @@
+.layer {
+    /* 版心盒子 */
+    /* 版心宽度是1100px */
+    width: 1100px;
+    /* 版心居中 */
+    margin: 0 auto;
+}
+
+
+/* title */
+
+.title h2 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
+.title span {
+    position: relative
+}
+
+.title span:after {
+    content: '';
+    position: absolute;
+    left: -77px;
+    top: 50px;
+    width: 273px;
+    height: 1px;
+    background-color: #999;
+}
+
+.title span:before {
+    content: '';
+    position: absolute;
+    left: 41px;
+    top: 49px;
+    width: 30px;
+    height: 3px;
+    z-index: 1000;
+    background-color: black;
+}
+
+
+/* 类选择器 */
+
+.top-bar {
+    /* 宽高 */
+    width: 100%;
+    height: 36px;
+    /* 背景颜色 */
+    background-color: #666666;
+    color: #fff;
+    /* 行高 */
+    line-height: 36px;
+    /* 字体大小 */
+    font-size: 12px;
+}
+
+
+/* 后代选择器 */
+
+.top-bar .top-bar-l {
+    /* 左浮动 */
+    float: left
+}
+
+.top-bar .top-bar-r {
+    /* 右浮动 */
+    float: right
+}
+
+
+/* logo-search */
+
+.logo-search {
+    /* 高度 */
+    height: 110px;
+    /* 背景 */
+    background-color: #000
+}
+
+.logo-search .logo {
+    float: left;
+    width: 580px;
+    height: 46px;
+    margin-top: 33px;
+    background-image: url(../images/logo.png);
+    /* 隐藏文字 */
+    text-indent: -9999px
+}
+
+.logo-search .search {
+    float: right;
+    width: 220px;
+    height: 30px;
+    /* 将盒子向下移动40px */
+    margin-top: 40px
+}
+
+.logo-search .search input {
+    float: left;
+    width: 190px;
+    height: 100%;
+    /* 取消输入框高亮效果 */
+    outline: none;
+    /* 移动输入框光标位置 */
+    text-indent: 10px;
+}
+
+.logo-search .search button {
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color: #dd1a04
+}
+
+
+/* nav */
+
+.nav {
+    width: 100%;
+    height: 60px;
+    background-color: #bf3131;
+    line-height: 60px;
+}
+
+.nav .nav-wrap {}
+
+.nav .nav-item {
+    float: left;
+    position: relative;
+}
+
+.nav .nav-item:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.nav .nav-item-last:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    left: 128px;
+    top: 0px;
+}
+
+.nav .nav-link {
+    display: block;
+    padding: 0 40px;
+    height: 60px;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/* banner */
+
+.banner {
+    /* 100% 父元素的宽度的100%；父元素若是没有宽度，就会找到爷爷 */
+    width: 100%;
+}
+
+.banner .banner-link {
+    width: 100%;
+}
+
+.banner .banner-link img {
+    /* 图片不要宽高一起设置，要么设置宽度，要么设置高度，否则容易变形 */
+    display: block;
+    width: 100%;
+}
+
+
+/* banner-description */
+
+.banner-des {
+    background-color: #ededed;
+    height: 212px;
+    font-size: 12px;
+    line-height: 2
+}
+
+.banner-des .banner-item {
+    float: left;
+    height: 100%;
+    width: 220px;
+}
+
+.banner-des .banner-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center
+}
+
+.banner-des .banner-link img {
+    margin-top: 44px;
+}
+
+.banner-des .banner-link strong {
+    display: block;
+    color: #000;
+    font-style: italic
+}
+
+.banner-des .banner-link em {
+    display: block;
+    color: #888;
+    font-style: italic
+}
+
+
+/* product-center */
+
+.product-center {
+    background-color: #fff;
+}
+
+.product-center .product-list {
+    margin-top: 50px;
+}
+
+.product-center .product-item {
+    float: left;
+    width: 258px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+}
+
+.product-center .product-margin {
+    margin-right: 0
+}
+
+.product-center .product-link {
+    display: block;
+    width: 100%;
+}
+
+.product-center .product-link img {
+    display: block;
+    width: 100%;
+}
+
+.product-center .product-link p {
+    text-align: center;
+    line-height: 45px;
+    font-size: 14px;
+    color: #808380
+}
+
+.product-center .product-more {
+    text-align: center
+}
+
+.product-center .product-btn {
+    display: inline-block;
+    width: 580px;
+    height: 40px;
+    border: 1px solid #cccccc;
+    margin-top: 30px;
+    margin-bottom: 48px;
+    /* padding: 30px; */
+    outline: none;
+    background-color: #fff;
+    /* 圆角半径 */
+    border-radius: 5px;
+    /* 阴影 */
+    box-shadow: 0px 4px 8px #ccc;
+    color: #808380;
+    /* 鼠标手势 */
+    cursor: pointer;
+}
+
+
+/* new-info */
+
+.news-info {
+    background-color: #f2f2f2
+}
+
+.news-info .news-main-l {
+    float: left;
+    width: 330px;
+}
+
+.news-info .news-main-l-top {
+    background-color: #c03333;
+    color: #fff;
+    padding: 30px 0 30px 10px;
+}
+
+.news-info .news-main-l-top h3 {
+    font-size: 20px;
+}
+
+.news-info .news-main-l-top p {
+    font-size: 16px;
+}
+
+.news-info .news-main-l img {
+    width: 100%;
+}
+
+.news-info .news-main-l-des {
+    width: 100%;
+}
+
+.news-info .news-main-l button {}
+
+.news-info .news-main-r {
+    float: right
+}

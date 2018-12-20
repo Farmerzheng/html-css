@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        a标签
+
+        target 属性 中文时‘目标’的意思 
+        
+        属性值默认是 _self
+
+        _self（自身、自己） 在原窗口当中打开页面
+        _blank（空白） 在新建窗口当中打开页面   
+    
+    -->
+
+
+    <a href="http://www.baidu.com" target="_blank">跳转到百度</a>
+
+    <a href="../demo-02.html" target="_blank">跳转到demo-02.html,在新建窗口中显示</a>
+
+    <a href="../images/A8.png">跳转到A8.png</a>
+
+
+    <!-- 
+        
+        路径：绝对路径、相对路径
+
+
+    
+    
+    
+    -->
+
+    <!-- 绝对路径？ 无论demo-03.html文件存放在我的电脑的任何位置，图片都能更够正常显示，图片的显示与否，与图片所在文件的位置无关 -->
+
+    <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=82544796,170592368&fm=173&app=25&f=JPEG?w=218&h=146&s=29D057875F72288624F41C3303007011" alt="">
+
+    <!-- 
+        
+        相对路径：当你引用本地图片的时候，会用到相对路径 
+
+        只要demo-03.html文件位置改变，图片的链接地址就需要改变才能显示
+
+        同级文件才能互相访问，如果不在同一级，我们需要跳出（../）或者进入(/)
+
+        ../   跳出某个文件夹
+        /     进入某个文件夹
+        ./    访问当前文件夹，一般情况下可以省略
+    
+    
+    -->
+
+    <img src="../images/A8.png" alt="">
+
+
+</body>
+
+</html>
